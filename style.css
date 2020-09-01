@@ -1,0 +1,86 @@
+/* General Styles */
+main {
+  margin-top: 60px;
+}
+h1{
+  font-family: 'Lexend Peta', sans-serif;
+}
+main h2{
+  font-family: 'Montserrat', sans-serif;
+}
+main h3{
+  font-family: 'Montserrat', sans-serif;
+}
+main h4{
+  font-family: 'Montserrat', sans-serif;
+}
+#projects h3{
+  font-family: 'Lexend Peta', sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+main p{
+  font-family: 'Montserrat', sans-serif;
+}
+main li {
+  line-height: 50px;
+}
+section{
+  margin-bottom: 25px;
+}
+/*header*/
+header{
+  background-color: #333533;
+  background-size: cover;
+  color: #e8eddf;
+  text-align: center;
+  height: auto;
+  padding: 25px 25px 25px 25px;
+}
+
+/*navigation bar*/
+nav{
+  margin-left:20px
+}
+nav a{
+  line-height: 50px;
+  margin-right: 20px;
+}
+
+#projects, #intro{
+  background-color: #e0ebe5;
+}
+
+.group img {
+  width: 100%;
+}
+.group .lara{
+  max-width: 400px;
+}
+/*pseudo-classes for links*/
+a:link    { color: black;  }
+a:visited { color: rgb(41, 41, 126);   }
+a:hover   { color: green; }
+
+/* Groups & Items  (Mobile First) */
+.group {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
