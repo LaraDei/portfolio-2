@@ -1,7 +1,11 @@
 /* General Styles */
+.wrapper{
+  background-image: url("images/seamless.png");
+  background-size: 100%;
+}
 body {
   background-color: #e8eddf;
-  background-image: url(images/seamless.png);
+  
 }
 main{
   margin-top:60px;
@@ -28,8 +32,7 @@ h1{
   font-family: 'Lexend Peta', sans-serif;
 }
 main h2{
-  font-family: 'Montserrat', sans-serif;
-  padding-top: 25px;
+  font-family: 'Montserrat', sans-serif; 
 }
 main h3{
   font-family: 'Montserrat', sans-serif;
@@ -46,7 +49,12 @@ main p{
 }
 main li, li {
   font-family: 'Montserrat', sans-serif;
+  word-wrap: break-word;
 }
+main li {
+  font-size: 18px;
+}
+
 
 
 /*header and navigation*/
@@ -54,19 +62,20 @@ header{
   background-color: #333533;
   color: #e8eddf;
   text-align: center;
-  margin: 0;
-  padding: 15px 0 0 0;
+  padding-top: 15px ;
+  width: 100%;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 header nav ul {
   display: flex;
   flex-direction: row;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0 0 20px 0
 }
 
 header nav ul li {
@@ -74,29 +83,22 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  padding: 0 15px 0 0;
 }
 nav a{
   margin-right: 20px;
-  line-height: 25px;
+  padding:0;
 }
+
 
 @media all and (min-width: 800px) {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0 14px 0 14px;
-  }
-
-  .logo {
-    margin: 14px 0px 14px 20px;
-    padding-top: 0;
-    
+    padding: 0 0 0 14px;
   }
 
   header nav {
-    margin-top: 14px;
-    
+    margin: 50px 10px 10px 10px;
   }
 }
 /*pseudo-classes for links*/
@@ -133,7 +135,6 @@ a:hover   { color: green; }
 /* Contact Form */
 
 form {
-  padding-right: 8px;
   font-family: 'Montserrat', sans-serif;
 }
 
