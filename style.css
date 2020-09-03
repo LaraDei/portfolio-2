@@ -19,7 +19,7 @@ section {
 }
 
 
-main img {
+main img, iframe {
   border-radius: 12px;
   width: 100%;
 }
@@ -37,6 +37,9 @@ main h3{
 main h4{
   font-family: 'Montserrat', sans-serif;
 }
+main h5{
+  font-family: 'Montserrat', sans-serif;
+}
 main p{
   font-family: 'Montserrat', sans-serif;
   line-height: 30px;
@@ -46,13 +49,13 @@ main li, li {
 }
 
 
-/*header*/
+/*header and navigation*/
 header{
   background-color: #333533;
   color: #e8eddf;
   text-align: center;
   margin: 0;
-  padding: 20px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 header nav {
@@ -71,20 +74,13 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  padding: 0 20px 0 0;
-}
-
-
-/*navigation bar*/
-nav{
-  margin-left:20px
+  padding: 0 15px 0 0;
 }
 nav a{
   margin-right: 20px;
-  font-size: 25px;
-  line-height: 50px;
-  
+  line-height: 25px;
 }
+
 @media all and (min-width: 800px) {
   header {
     display: flex;
@@ -131,6 +127,7 @@ a:hover   { color: green; }
   .group {
     flex-direction: row;
   }
+
 }
 
 /* Contact Form */
