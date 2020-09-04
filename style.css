@@ -2,11 +2,9 @@
 .wrapper{
   background-image: url("images/seamless.png");
   background-size: 100%;
-}
-body {
   background-color: #e8eddf;
-  
 }
+
 main{
   margin-top:60px;
 }
@@ -21,12 +19,15 @@ section {
 #about, #contact{
   background-color: rgb(232, 237, 223, .98);
 }
-
-
 main img, iframe {
   border-radius: 12px;
   width: 100%;
 }
+.slash{
+  margin: 0px 10px 0px 10px;
+}
+
+
 /* --- Typography -- */
 h1{
   font-family: 'Lexend Peta', sans-serif;
@@ -57,15 +58,20 @@ main li {
 
 
 
-/*header and navigation*/
-header{
+
+
+
+/*header, footer, and navigation*/
+header, footer{
   background-color: #333533;
   color: #e8eddf;
   text-align: center;
   padding-top: 15px ;
   width: 100%;
 }
-
+footer{
+  padding: 15px 0;
+}
 header nav {
   display: flex;
   flex-direction: row;
@@ -110,6 +116,12 @@ a:hover   { color: green; }
 .group {
   display: flex;
   flex-direction: column;
+}
+.links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
 }
 
 .item {
